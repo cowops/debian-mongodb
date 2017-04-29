@@ -23,13 +23,13 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-mongodb }
+         - { role: cowops.debian-mongodb }
 
 Tasks
 -----
 
   - Install [MongoDB](http://www.mongodb.org/)
-  
+
 
 License
 -------

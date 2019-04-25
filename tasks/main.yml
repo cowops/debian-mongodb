@@ -12,7 +12,12 @@
       - sudo locale-gen
 
 - name: install mongodb packages
-  apt: pkg={{ item }} state=latest update_cache=yes force=yes
-  with_items:
+  apt:
+    name: {{ packages }}
+    state: latest
+    update_cache: yes
+    force: yes
+  vars:
+    packages:
       - mongodb-org
   notify: restart mongodb

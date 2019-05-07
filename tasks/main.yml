@@ -13,7 +13,7 @@
 
 - name: install mongodb packages
   apt:
-    name: {{ packages }}
+    name: "{{ packages }}"
     state: latest
     update_cache: yes
     force: yes
